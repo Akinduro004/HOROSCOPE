@@ -162,14 +162,14 @@ function displaysign(){
         }
         else{
             result.innerHTML=re+" "+"Taurus";
-            document.getElementById("sign-symbol").src="images/aries.jpg";
+            document.getElementById("sign-symbol").src="images/taurus.jpg";
         }
     
 }
 if(mnth=="May"){
     if(dy<=20){
        result.innerHTML=re+" "+"Taurus";
-       document.getElementById("sign-symbol").src="images/aries.jpg";
+       document.getElementById("sign-symbol").src="images/taurus.jpg";
     }
     else{
         result.innerHTML=re+" "+"Gemini";
