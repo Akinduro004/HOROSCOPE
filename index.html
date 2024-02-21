@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horoscope</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body onload="LoadMonths(), swipeInleft(), FadeIn(), swipeInright()">
+    
+    <div class="continer-fluid bg-dark">
+        <div class="container padding p-5  ">
+            <div class="row">
+                <div class="col-md-12 text-center text-light"><h1>HOROSCOPE</h1>
+                    <div id="swipe"><h3>There are so many Zodiac signs, what is yours?</h3></div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="p-3 bg-dark " id="left">
+                            <h1 class="text-center bg-primary">CHECK YOUR SIGN TODAY!</h1>
+                            
+                                <div class="form-group ">
+                                    <label style="font-weight: bolder; font-size: 20px;">Month</label>
+                                    <select style="width: 80%; height: 40px;" id="month" onchange=" LoadDays(this.value);" class="form-select">
+                                        <option value="NA">select month</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label style="font-weight: bolder; font-size: 20px;">Day</label>
+                                    <select style="width: 84%; height: 40px;" id="day" class="form-select">
+                                      
+                                    </select>
+                                </div>
+                          
+                                
+                                <div class="form-group mt-2">
+                                    <button class="btn btn-primary text-uppercase" onclick="displaysign()">Check Now</button>
+                                </div>
+    
+                        </div>
+
+                       
+    
+                    </div>
+
+                </div>
+
+                <div class="col-md-4" id="right">
+                   <div class="card p-3 text-center bg-dark text-light border-light">
+                    <h2 id="result"></h2>
+                    <h2><img id="sign-symbol" class="image-fluid"></h2>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="mainjs/site.js"></script>
+</body>
+</html>
